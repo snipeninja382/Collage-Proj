@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collage assignment</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        .grid-container{
+            display: grid;
+            grid-template-columns:repeat(3, 1fr) ;
+            grid-template-rows: repeat(6, 1fr);
+            grid-gap: 5px;
+            align-content: center;
+        }
+        .grid-item{
+            width: 100%;
+            height: 100%;
+            grid-row: span 2;
+            object-fit: contain;
+        }
+       .grid-item-a{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            grid-row: 1/4;
+            grid-column: 2/2;
+        }
+        .grid-item-b{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            grid-row:4/7;
+            grid-column: 2/2;
+            
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <img class="grid-item" src="images/7.PNG" alt="">
+        <img class="grid-item-a" src="images/10.PNG" alt="">
+        <img class="grid-item" src="images/12.PNG" alt="">
+        <img class="grid-item" src="images/8.PNG" alt="">
+        <img class="grid-item-b" src="images/11.PNG" alt="">
+        <img class="grid-item" src="images/13.PNG" alt="">
+        <img class="grid-item" src="images/9.PNG" alt="">
+        <img class="grid-item" src="images/14.PNG" alt="">
+    </div>
+</body>
+</html>
